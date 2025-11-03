@@ -1,11 +1,18 @@
-//  Problem 4: Find the Maximum Number
-// Write a function that takes an array of numbers and returns the largest number.
+// Problem 2: Count Vowels in a String
+// Write a function that counts how many vowels (a, e, i, o, u) are in a given string.
 
 // Example:
 
-// Input: [5, 1, 9, 3]
-// Output: 9
+// Input: "programming"
+// Output: 3
 
-// Ans:
-const max = Math.max(24, 4, 68, 79, 34, 56, 90);
-console.log(max);
+// Ans:---
+
+function countVowels(str) {
+  return str
+    .toLowerCase()
+    .split("")
+    .filter(char => "aeiou".includes(char)).length;
+}
+
+console.log(countVowels("Programming"));

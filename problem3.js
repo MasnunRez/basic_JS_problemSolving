@@ -1,19 +1,18 @@
-// Problem 6: Sum of All Numbers in an Array
-// Write a function that returns the sum of all numbers in an array.
+// Problem 3: Check for Palindrome
+// Write a function that checks if a string is a palindrome (reads the same forward and backward).
 
 // Example:
 
-// Input: [1, 2, 3, 4]
-// Output: 10
+// Input: "madam"
+// Output: true
+// Input: "hello"
+// Output: false
 
 // Ans:
-function sumOfArray(numbers) {
-  let sum = 0;
-  for (const number of numbers) {
-    sum = sum + number;
-  }
-  return sum;
+function isPalindrome(str) {
+  const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, ""); // remove spaces/special chars
+  const reversed = cleaned.split("").reverse().join("");
+  return cleaned === reversed;
 }
 
-const numb = [1, 2, 3, 4];
-console.log(sumOfArray(numb));
+console.log(isPalindrome("madam")); 

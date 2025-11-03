@@ -1,18 +1,16 @@
-// Problem 8: Capitalize First Letter of Each Word
-// Write a function that capitalizes the first letter of each word in a string.
+// Problem 5: Remove Duplicates from an Array
+// Write a function that removes all duplicate numbers from an array.
 
 // Example:
 
-// Input: "hello world"
-// Output: "Hello World"
+// Input: [1, 2, 2, 3, 4, 4]
+// Output: [1, 2, 3, 4]
+
 
 // Ans:
-const input = "hello world"
-
-function capitalizeWord(str){
-    return str
-    .split(' ')
-    .map(word=>word.charAt(0).toUpperCase()+word.slice(1))
-    .join(' ')
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
 }
-console.log(capitalizeWord(input));
+
+// Example
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4])); 

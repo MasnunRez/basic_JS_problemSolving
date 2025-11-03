@@ -1,13 +1,11 @@
-// Problem 7: Find Even Numbers in an Array
-// Write a function that returns all even numbers from a given array.
+//  Problem 4: Find the Maximum Number
+// Write a function that takes an array of numbers and returns the largest number.
 
 // Example:
 
-// Input: [1, 2, 3, 4, 5, 6]
-// Output: [2, 4, 6]
+// Input: [5, 1, 9, 3]
+// Output: 9
 
 // Ans:
-const input = [1, 2, 3, 4, 5, 6]
-
-const evenNum = input.filter(input=>input%2==0)
-console.log (evenNum)
+const max = Math.max(24, 4, 68, 79, 34, 56, 90);
+console.log(max);
